@@ -1,0 +1,208 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage[usenames,dvipsnames]{xcolor}
+\addbibresource{pubs.bib}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black 
+    %urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+
+
+\begin{document}
+
+
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{http://researcher.ibm.com/researcher/view.php?person=us-jjortiz}{\LARGE Jorge Ortiz, Ph.D.}} & \href{mailto:jortiz@alum.mit.edu}{jortiz@alum.mit.edu}\\
+	{\footnotesize \texttt{\colorbox{gray}{[601 West 57 Street, Apt 5Q, NY, NY 10019]}}} & \href{http://www.cs.berkeley.edu/~jortiz}{http://www.cs.berkeley.edu/$\sim$jortiz} \\
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+        \item
+            \ressubheading{\href{}{University of California, Berkeley}}{Berkeley, CA}{\href{}{Doctor of Philosophy in Computer Science}; \href{}}{May. 2010 -- Dec. 2013}
+                { \footnotesize
+				\begin{itemize}
+					\resitem{Dissertation: A Platform Architecture for Sensor Data Processing and Verification in Buildings}
+				\end{itemize}
+				}
+        \item
+            \ressubheading{\href{}{University of California, Berkeley}}{Berkeley, CA}{\href{}{Masters of Science in Computer Science}; \href{}}{Aug. 2007 -- May 2010}
+                { \footnotesize
+				\begin{itemize}
+					\resitem{Thesis: Multichannel Reliability Assessment in Real World WSNs}
+                    \resitem{Relevant Courses: Advanced Systems Seminar I \& II, Graduate Networking, Sensor Networks Seminar, Combinatorial Algorithms, Parallel Computation Algorithms, Statistical Learning Theory, Practical Machine Learning.}
+				\end{itemize}
+				}
+       \item
+            \ressubheading{\href{}{Massachusetts Institute of Technology}}{Cambridge, MA}{\href{}{Bachelors of Science in Computer Science and Engineering}; \href{}}{Aug. 1999 -- May 2003}
+                { \footnotesize
+				\begin{itemize}
+					\resitem{Thesis: Connection Oriented Routing Environment (CORE): A Generalized Device         Interconnect}
+				\end{itemize}
+				}
+    \end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+	\begin{itemize}
+
+        \item 
+			\ressubheading{\href{http://www.research.ibm.com/}{IBM Research}}{Yorktown Heights, NY}
+				{Research Staff Member}{Dec. 2013 -- Present}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Research work on a variety of topics related to distributed systems, mobile sensing, cloud-based middleware architectures, and machine learning. }
+				\end{itemize}
+				}
+
+
+        \item 
+			\ressubheading{\href{https://spire.com/}{Spire}}{San Francisco, CA}
+				{Senior Software Engineer}{Jan. 2013 -- Sept. 2013}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Designed and wrote communication kernel for arduino-based, nano satellites.}
+				\end{itemize}
+				}
+
+		\item 
+			\ressubheading{\href{http://www.oracle.com}{Oracle Corporation}}{Burlington, MA}
+				{Software Engineer}{Sept. 2003 -- Feb. 2007}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Assisted in designing, debugging, and maintaining several features in Oracle Enterprise Planning and Budgeting (EPB) software suite; include, but not limited to the setup of PL/SQL packages, schemas, and interfaces to the Java\-based UI.}
+				\end{itemize}
+				}
+
+				
+		
+\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\href{http://www.derekhildreth.com/portfolio.php}{Skills}}
+	\begin{description}
+		\item[Proficient in:]{Java, Python, C
+		}
+		\item[Experience/Familiar with:]{ \footnotesize
+            C++, Javascript, Perl, NesC, TinyOS,
+            IEEE 802.11, 802.15.4, Android development
+		}
+        \item[Fluent in:] { \footnotesize
+            Spanish
+		}
+	\end{description} % End Skills list
+
+\resheading{Internships}
+	\begin{itemize}
+
+        \item 
+			\ressubheading{\href{}{Charles River Analytics}}{Cambridge, MA}
+				{Research Intern}{Jun. 2003 -- Sept. 2003}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Designed genetic algorithms for optimizing flight paths under various weather conditions.  Tested algorithms in a cluster.  Wrote cluster management components of simulator.}
+				\end{itemize}
+				}
+
+
+        \item 
+			\ressubheading{\href{}{IBM Research}}{Cambridge, MA}
+				{Research Intern}{May 2002 -- Aug. 2002}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Designed backend of prototype mobile email client.  Designed usability experiments and collected data about fundamental components in the design.}
+				\end{itemize}
+				}
+
+        \item 
+			\ressubheading{\href{}{Merrill Lynch}}{New York, NY}
+				{Summer Analyst}{May -- Aug. 2000/2001}
+				{ \footnotesize
+				\begin{itemize}
+                    \resitem{Design and wrote internal websites for Technology Infrastructure Services- Network Services Group (TIS-NS) the Corporate and Institutional Client Group Desktop Engineering (CDE).}
+				\end{itemize}
+				}
+
+	\end{itemize}  % End Experience list
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Select Publications}
+\nocite{*}                                          % Print all publications.
+\printbibliography[heading=none]
+
+
+
+\end{document}
+
+
+
