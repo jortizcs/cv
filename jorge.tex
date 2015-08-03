@@ -16,7 +16,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage[pdftex]{hyperref}
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex,maxnames=99]{biblatex}
 \usepackage[usenames,dvipsnames]{xcolor}
 \addbibresource{pubs.bib}
 \hypersetup{
@@ -146,51 +146,74 @@
 \end{itemize}  % End Experience list
 
 %%%%%%%%%%%%%%%%%%%%%%
-\resheading{\href{http://www.derekhildreth.com/portfolio.php}{Skills}}
+\resheading{\href{}{Skills}}
 	\begin{description}
 		\item[Proficient in:]{Java, Python, C
 		}
-		\item[Experience/Familiar with:]{ \footnotesize
-            C++, Javascript, Perl, NesC, TinyOS,
-            IEEE 802.11, 802.15.4, Android development
+		\item[Experience/Familiar with:]{ 
+            C++, Javascript, Perl, NesC, TinyOS, Android development
 		}
-        \item[Fluent in:] { \footnotesize
+        \item[Fluent in:] { 
             Spanish
 		}
 	\end{description} % End Skills list
 
-\resheading{Internships}
-	\begin{itemize}
 
-        \item 
-			\ressubheading{\href{}{Charles River Analytics}}{Cambridge, MA}
-				{Research Intern}{Jun. 2003 -- Sept. 2003}
-				{ \footnotesize
-				\begin{itemize}
-                    \resitem{Designed genetic algorithms for optimizing flight paths under various weather conditions.  Tested algorithms in a cluster.  Wrote cluster management components of simulator.}
-				\end{itemize}
-				}
+\resheading{Projects}
+\begin{itemize}
+    \item {\textbf{Systems for Large-Scale Distributed Machine Learning}}
+            \begin{itemize}
+                \resitem{Application programmers in domains like machine learning, scientific computing, and computational biology are accustomed to using powerful, high productivity array languages such as MatLab, R and NumPy. Distributed array frameworks aim to scale array programs across machines. High performance is necessary to facilitate braod experimentation.  We have been examining various fundamental algorithms and system designed for increasing machine leanring job performance and completetion time.}
+                \resitem{Spartan~\cite{spartan} maximizes locality of access to distributed arrays. Such locality is critical for high performance.  Spartan is a distributed array framework that automatically determines how to best partition (aka “tile”) ndimensional arrays and to co-locate data with computation to maximize locality.}
+            \end{itemize}
 
+    \item {\textbf{Systems for Distributed Machine Learning in Resource-constrained Environments}}
+        \begin{itemize}
+            \resitem{Machine learning system for running machine learning in resource constrained environments, such as mobile phones.}
+            \resitem{Approximation techniques for cooperatively clustering images taken by phones in the same location, in real time.}
+            \resitem{Design of mechanisms and APIs for separating machine learning algorithm design from the distribued system complexities for lossy links and high-failure rates of mobile environments} 
+        \end{itemize}
 
-        \item 
-			\ressubheading{\href{}{IBM Research}}{Cambridge, MA}
-				{Research Intern}{May 2002 -- Aug. 2002}
-				{ \footnotesize
-				\begin{itemize}
-                    \resitem{Designed backend of prototype mobile email client.  Designed usability experiments and collected data about fundamental components in the design.}
-				\end{itemize}
-				}
+    \item {\textbf{Automatic Metadata Normalization of Sensor Feeds}}
+        \begin{itemize}
+            \resitem{Machine learning techniques for characterizing timeseries sensor data into class types.}
+            \resitem{Active learning techniques where string formats are used to automatically parse contextual metadata embedded in sesnor tag names.\cite{Arka_buildsys2015}}
+            \resitem{Transfer learning techniques to use models across sensor deployments in the same deployments domain.  For example, metadata models that can be applied across buildings.~\cite{Fontugne:2013:SBS:2461381.2461399,Hong:2013:TAS:2528282.2528302,Dezhi_buildsys2015}}
+        \end{itemize}
+\end{itemize}
 
-        \item 
-			\ressubheading{\href{}{Merrill Lynch}}{New York, NY}
-				{Summer Analyst}{May -- Aug. 2000/2001}
-				{ \footnotesize
-				\begin{itemize}
-                    \resitem{Design and wrote internal websites for Technology Infrastructure Services- Network Services Group (TIS-NS) the Corporate and Institutional Client Group Desktop Engineering (CDE).}
-				\end{itemize}
-				}
-
-	\end{itemize}  % End Experience list
+%\resheading{Internships}
+%	\begin{itemize}
+%
+%        \item 
+%			\ressubheading{\href{}{Charles River Analytics}}{Cambridge, MA}
+%				{Research Intern}{Jun. 2003 -- Sept. 2003}
+%				{ \footnotesize
+%				\begin{itemize}
+%                    \resitem{Designed genetic algorithms for optimizing flight paths under various weather conditions.  Tested algorithms in a cluster.  Wrote cluster management components of simulator.}
+%				\end{itemize}
+%				}
+%
+%
+%        \item 
+%			\ressubheading{\href{}{IBM Research}}{Cambridge, MA}
+%				{Research Intern}{May 2002 -- Aug. 2002}
+%				{ \footnotesize
+%				\begin{itemize}
+%                    \resitem{Designed backend of prototype mobile email client.  Designed usability experiments and collected data about fundamental components in the design.}
+%				\end{itemize}
+%				}
+%
+%        \item 
+%			\ressubheading{\href{}{Merrill Lynch}}{New York, NY}
+%				{Summer Analyst}{May -- Aug. 2000/2001}
+%				{ \footnotesize
+%				\begin{itemize}
+%                    \resitem{Design and wrote internal websites for Technology Infrastructure Services- Network Services Group (TIS-NS) the Corporate and Institutional Client Group Desktop Engineering (CDE).}
+%				\end{itemize}
+%				}
+%
+%	\end{itemize}  % End Experience list
 
 
 
